@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.quilt-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 20%;
+  height: 150px;
+}
+
+.box1 {
+  background: linear-gradient(90deg, #ff6666, #ffdada);
+}
+
+.box2 {
+  background: linear-gradient(45deg, #ffcc66, #fff599);
+}
+
+.box3 {
+  background: linear-gradient(45deg, #66ccff, #99ccffaf);
+}
+
+.box4 {
+  background: linear-gradient(45deg, #ff99cc, #ffccdd);
+}
+
+.box5 {
+  background: linear-gradient(45deg, #99ff66, #36492f);
+}
