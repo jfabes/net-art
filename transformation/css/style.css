@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+.transformed {
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  transition: all 0.3s ease;
+}
