@@ -1,0 +1,77 @@
+body {
+  font-family: "Tangerine", serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/home1.png"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Overlay color (adjust opacity as needed) */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: white; /* Text color */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px; /* Adjust as needed for spacing between rectangles */
+  height: 100vh; /* Fills the entire viewport height */
+}
+
+.rectangle {
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+  position: relative;
+  z-index: 1;
+}
+
+.rectangle:hover {
+  background-color: transparent; /* Removes overlay color on hover */
+}
+
+.rectangle:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* Maintains aspect ratio of rectangles */
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Large Image Containers</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-container {
+        width: 800px;
+        height: 400px;
+        margin: 20px;
+        background-color: white;
+        overflow: hidden;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        text-align: center;
+        color: rgb(10, 10, 10);
+        max-width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <a href="../index.html" target="_blank" class="website-link">Home</a>
+      <h2>"My Boyfriend Came Back from the War" by Olia Lialina</h2>
+      <h5>Year: 1996</h5>
+      <p>
+        Stories are intricate tapestries of reality, woven and shared among us.
+        This particular piece of artwork empowers the viewer to select their own
+        reality as the author guides them through the narrative. The array of
+        decision points invites the viewer to explore every potential outcome
+        and conclusion, as each path is uniquely divine and meant to be
+        experienced by the individual. Interactive storytelling, a phenomenon
+        that this artist mastered before its widespread recognition, offers a
+        dynamic and engaging approach to narrative exploration.
+      </p>
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <img src="../img/mbf1.png" alt="Image 1" />
+      </div>
+      <div class="image-container">
+        <img src="../img/mbf2.png" alt="Image 2" />
+      </div>
+      <div class="image-container">
+        <img src="../img/mbf3.png" alt="Image 3" />
+      </div>
+      <div class="image-container">
+        <img src="../img/mbf4.png" alt="Image 4" />
+      </div>
+    </div>
+
+    <a
+      href="https://sites.rhizome.org/anthology/lialina.html"
+      target="_blank"
+      class="website-link"
+      >Website</a
+    >
+  </body>
+</html>

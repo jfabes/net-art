@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Large Image Containers</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        height: 100vh;
+      }
+      .container {
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-container {
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        background-color: white;
+        overflow: hidden;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        text-align: center;
+        color: white;
+        max-width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <a href="../index.html" target="_blank" class="website-link">Home</a>
+      <h2>"Nine Eyes of Google Street View" by Jon Rafman</h2>
+      <h5>Year: 2008 - Ongoing</h5>
+      <p>
+        This ongoing net art project features photographs taken three years ago,
+        each captured by Google's camera, depicting the mundane yet profound
+        experiences of humanity. These images encapsulate moments of altruism,
+        nurturing, and the unbridled expression of innate emotions. Together,
+        they offer a poignant glimpse into the collective narrative of humanity.
+      </p>
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <img src="../img/9eye1.png" alt="Image 1" />
+      </div>
+      <div class="image-container">
+        <img src="../img/9eye2.png" alt="Image 2" />
+      </div>
+      <div class="image-container">
+        <img src="../img/9eye3.png" alt="Image 3" />
+      </div>
+    </div>
+    <p class="website-link">Website</p>
+
+    <a href="https://9-eyes.com/" target="_blank" class="website-link"
+      >Website</a
+    >
+  </body>
+</html>

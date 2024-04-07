@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Large Image Containers</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px; /* Added padding to give some space around the content */
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-container {
+        width: 800px;
+        height: 400px;
+        margin: 20px;
+        background-color: white;
+        overflow: hidden;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        text-align: center;
+        color: rgb(255, 249, 249);
+        max-width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <a href="../index.html" target="_blank" class="website-link">Home</a>
+      <h2>"SCANDALISHIOUS" by Ann Hirsch</h2>
+      <h5>Year: 2008-2009</h5>
+      <p>
+        This artwork narrates the tale of a young girl thrust into the spotlight
+        of YouTube, facing the scrutiny of thousands of strangers in a platform
+        that was once unfamiliar to many. Through her videos, crafted to
+        challenge her audience's perceptions of normalcy, she inadvertently
+        redefined the concept of confidence. The reactions to her experiments
+        unveil the story of the anonymous viewer and their undeniable influence
+        in shaping her treatment, driven by their own preconceived notions and
+        biases regarding women. It's a story that is currently well known and
+        debated heavily, but for her it was new and groundbreaking.
+      </p>
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <img src="../img/scandal1.png" alt="Image 1" />
+      </div>
+      <div class="image-container">
+        <img src="../img/scandal2.png" alt="Image 2" />
+      </div>
+      <div class="image-container">
+        <img src="../img/scandal3.png" alt="Image 3" />
+      </div>
+    </div>
+
+    <a
+      href="http://archive.rhizome.org/anthology/scandalishious/"
+      target="_blank"
+      class="website-link"
+      >Website</a
+    >
+  </body>
+</html>
